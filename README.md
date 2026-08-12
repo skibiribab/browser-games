@@ -4,6 +4,16 @@ All-in-one hub for old-school games and puzzles — like a *banca de jornal*. Th
 
 Full-stack: a React + TypeScript frontend with per-game apps, a service-based backend, a game catalog, and per-game data.
 
+## Focus
+
+Three daily pillars:
+
+- **Sudoku** — generator + auto-solve.
+- **Logic grid** — grid deduction with green-check marking (the phrases game).
+- **Crosswords** — solver-first with a curated puzzle bank.
+
+Other game ideas live as issues, not in the active catalog. See [docs/ADD-A-GAME.md](docs/ADD-A-GAME.md) for the add-a-game boilerplate.
+
 ## Structure
 
 ```text
@@ -19,19 +29,15 @@ docs/       GAMES / GOALS / REQUIREMENTS
 
 ## Games
 
-The catalog (`catalog/games.yaml`) is the source of truth — every game maps to a GitHub issue and a `/play/<slug>` route:
+The catalog (`catalog/games.yaml`) is the source of truth — the active games are the three pillars, each mapped to a `/play/<slug>` route:
 
 | Game | Route |
 |---|---|
 | Sudoku | `/play/sudoku` |
+| Logic Grid | `/play/logic-puzzles` |
 | Crosswords | `/play/crosswords` |
-| Logic Puzzles | `/play/logic-puzzles` |
-| N-Queens | `/play/n-queens` |
-| Numerox | `/play/numerox` |
-| Numerox Letters | `/play/numerox-letters` |
-| Tango | `/play/tango` |
 
-More are planned in the catalog (chess, checkers, nonogram, and others) — see `docs/GAMES.md` for status.
+Other game ideas (n-queens, numerox, tango, chess, checkers, nonogram, and others) are tracked as issues — see `docs/GAMES.md`.
 
 ## Quick start
 
