@@ -1,5 +1,5 @@
 {
-  "name": "@arcade/numerox-service",
+  "name": "@puzzle-arcade/numerox-service",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,5 +1,5 @@
 {
-  "name": "arcade-backend",
+  "name": "puzzle-arcade-backend",
   "private": true,
   "workspaces": [
     "services/*"

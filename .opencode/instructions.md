@@ -1,4 +1,4 @@
-# Arcade conventions
+# Puzzle-arcade conventions
 
 All-in-one hub for old-school games and puzzles (a *banca de jornal*): a launcher home page that routes into each game. Full-stack monorepo.
 
@@ -13,7 +13,7 @@ All-in-one hub for old-school games and puzzles (a *banca de jornal*): a launche
 ## Rules
 
 - New games: add a catalog entry first (`catalog/games.yaml`), then the frontend app + backend service + data.
-- Package scope is `@arcade/*`.
+- Package scope is `@puzzle-arcade/*`.
 - Theme: `GitHub Dark Default`.
 
 ## CI

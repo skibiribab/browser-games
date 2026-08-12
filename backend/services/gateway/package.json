@@ -1,5 +1,5 @@
 {
-  "name": "@arcade/gateway",
+  "name": "@puzzle-arcade/gateway",
   "private": true,
   "type": "module",
   "scripts": {

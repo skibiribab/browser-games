@@ -1,4 +1,4 @@
-# arcade
+# puzzle-arcade
 
 All-in-one hub for old-school games and puzzles — like a *banca de jornal*. The **launcher** is the home page: one game selector that drops you into any game, all in this single monorepo.
 

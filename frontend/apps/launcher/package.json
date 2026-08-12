@@ -1,5 +1,5 @@
 {
-  "name": "@arcade/launcher",
+  "name": "@puzzle-arcade/launcher",
   "private": true,
   "type": "module",
   "scripts": {

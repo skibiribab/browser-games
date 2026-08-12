@@ -1,5 +1,5 @@
 {
-  "name": "@arcade/numerox-letters-service",
+  "name": "@puzzle-arcade/numerox-letters-service",
   "private": true,
   "type": "module",
   "scripts": {

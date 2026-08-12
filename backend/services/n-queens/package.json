@@ -1,5 +1,5 @@
 {
-  "name": "@arcade/n-queens-service",
+  "name": "@puzzle-arcade/n-queens-service",
   "private": true, "type": "module",
   "scripts": { "dev": "tsx watch src/index.ts", "build": "tsc", "start": "node dist/index.js", "clean": "rm -rf dist node_modules" },
   "dependencies": { "@aws-sdk/client-dynamodb": "^3.721.0", "@aws-sdk/lib-dynamodb": "^3.721.0", "express": "^4.21.1",
