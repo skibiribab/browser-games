@@ -1,5 +1,5 @@
 {
-  "name": "@puzzle-arcade/shared",
+  "name": "@browser-games/shared",
   "private": true,
   "type": "module",
   "main": "src/index.ts",

@@ -13,7 +13,7 @@ All-in-one hub for old-school games and puzzles (a *banca de jornal*): a launche
 ## Rules
 
 - New games: add a catalog entry first (`catalog/games.yaml`), then the frontend app + backend service + data.
-- Package scope is `@puzzle-arcade/*`.
+- Package scope is `@browser-games/*`.
 - Theme: `GitHub Dark Default`.
 
 ## CI

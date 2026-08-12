@@ -1,5 +1,5 @@
 {
-  "name": "@puzzle-arcade/n-queens",
+  "name": "@browser-games/n-queens",
   "private": true,
   "type": "module",
   "scripts": {

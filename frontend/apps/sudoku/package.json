@@ -1,5 +1,5 @@
 {
-  "name": "@puzzle-arcade/sudoku",
+  "name": "@browser-games/sudoku",
   "private": true,
   "type": "module",
   "scripts": {

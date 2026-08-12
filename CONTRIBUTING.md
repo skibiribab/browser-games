@@ -1,12 +1,12 @@
 # Contributing
 
-Thanks for contributing to `puzzle-arcade`.
+Thanks for contributing to `browser-games`.
 
 ## Conventions
 
 - Editor rules live in `.editorconfig` + `.vscode/settings.json`.
 - Games are added via the catalog first: `catalog/games.yaml` (each game = one issue + one `/play/<slug>` route).
-- Package scope is `@puzzle-puzzle-arcade/*`.
+- Package scope is `@browser-games/*`.
 - `test.yml` gates pull requests — keep it green.
 
 ## PR workflow

@@ -1,5 +1,5 @@
 {
-  "name": "@puzzle-arcade/numerox",
+  "name": "@browser-games/numerox",
   "private": true,
   "type": "module",
   "scripts": {

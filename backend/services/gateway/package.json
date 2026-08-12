@@ -1,5 +1,5 @@
 {
-  "name": "@puzzle-arcade/gateway",
+  "name": "@browser-games/gateway",
   "private": true,
   "type": "module",
   "scripts": {

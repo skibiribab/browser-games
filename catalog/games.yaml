@@ -2,7 +2,7 @@
 # Status: planned | in_progress | active
 version: 2
 
-hub: puzzle-arcade
+hub: browser-games
 browser_target: chrome
 category: static
 
