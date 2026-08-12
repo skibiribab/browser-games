@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/tango-service",
+  "name": "@arcade/tango-service",
   "private": true,
   "type": "module",
   "scripts": {

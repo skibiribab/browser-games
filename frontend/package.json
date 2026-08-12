@@ -1,5 +1,5 @@
 {
-  "name": "static-puzzles-frontend",
+  "name": "arcade-frontend",
   "private": true,
   "workspaces": [
     "apps/*"

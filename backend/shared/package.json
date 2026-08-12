@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/shared",
+  "name": "@arcade/shared",
   "private": true,
   "type": "module",
   "main": "src/index.ts",

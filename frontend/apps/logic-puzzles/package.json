@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/logic-puzzles",
+  "name": "@arcade/logic-puzzles",
   "private": true,
   "type": "module",
   "scripts": {

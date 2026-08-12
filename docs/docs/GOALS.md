@@ -31,8 +31,8 @@ data/
 ## Routes
 
 ```
-/play/static-puzzles           → puzzle picker
-/play/static-puzzles/sudoku  → play
-/play/static-puzzles/chess
+/play/arcade           → puzzle picker
+/play/arcade/sudoku  → play
+/play/arcade/chess
 ...
 ```

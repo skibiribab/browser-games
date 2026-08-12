@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/n-queens",
+  "name": "@arcade/n-queens",
   "private": true,
   "type": "module",
   "scripts": {

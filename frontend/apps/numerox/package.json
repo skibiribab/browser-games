@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/numerox",
+  "name": "@arcade/numerox",
   "private": true,
   "type": "module",
   "scripts": {

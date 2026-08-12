@@ -1,5 +1,5 @@
 {
-  "name": "@static-puzzles/crosswords-service",
+  "name": "@arcade/crosswords-service",
   "private": true,
   "type": "module",
   "scripts": {
