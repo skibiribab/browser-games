@@ -1,8 +1,6 @@
 # browser-games
 
-All-in-one hub for old-school games and puzzles — like a *banca de jornal*. The **launcher** is the home page: one game selector that drops you into any game, all in this single monorepo.
-
-Full-stack: a React + TypeScript frontend with per-game apps, a service-based backend, a game catalog, and per-game data.
+Browser games with a Rust + WASM focus — like a *banca de jornal*. The **launcher** is the home page: one game selector that drops you into any game. Rust-first, no TypeScript outside the launcher.
 
 ## Focus
 
@@ -17,19 +15,21 @@ Other game ideas live as issues, not in the active catalog. See [docs/ADD-A-GAME
 ## Structure
 
 ```text
-frontend/   React + TypeScript
-  apps/
-    launcher/        all-in-one game selector (home page)
-    <game>/          one app per game
-backend/    services — gateway + one service per game
-catalog/    games.yaml (the roadmap) + tags
-data/       per-game datasets
-docs/       GAMES / GOALS / REQUIREMENTS
+src/
+  rust/            Rust workspace
+    backend/       axum API — auth (local + oauth) · games · db (postgres)
+    engines/       wasm32 crates (single-threaded, canvas) — sudoku · logic-grid · crosswords
+  frontend/
+    launcher/      React + TS (the only TS UI) — login + game selector
+  catalog/         games.yaml (the roadmap) + tags
+  data/            per-game datasets
+docker/            Dockerfile + docker-compose.yml (backend + postgres)
+docs/              GAMES / GOALS / REQUIREMENTS
 ```
 
 ## Games
 
-The catalog (`catalog/games.yaml`) is the source of truth — the active games are the three pillars, each mapped to a `/play/<slug>` route:
+The catalog (`src/catalog/games.yaml`) is the source of truth — the active games are the three pillars, each mapped to a `/play/<slug>` route:
 
 | Game | Route |
 |---|---|
@@ -42,16 +42,8 @@ Other game ideas (n-queens, numerox, tango, chess, checkers, nonogram, and other
 ## Quick start
 
 ```bash
-./start.sh
+docker compose -f docker/docker-compose.yml up --build
 ```
-
-or, with Docker Compose:
-
-```bash
-docker compose up --build
-```
-
-`docker-compose.yml` wires the DynamoDB local + backend services; the frontend runs per-app via Vite.
 
 ## Docs
 

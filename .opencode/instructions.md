@@ -1,19 +1,20 @@
-# Puzzle-arcade conventions
+# Browser-games conventions
 
-All-in-one hub for old-school games and puzzles (a *banca de jornal*): a launcher home page that routes into each game. Full-stack monorepo.
+Browser games, Rust-first. No TypeScript outside the launcher.
 
 ## Structure
 
-- `frontend/` — React + TypeScript; `apps/launcher` is the game selector, one app per game.
-- `backend/` — services; gateway + one service per game.
-- `catalog/games.yaml` — the game roadmap (source of truth); each game maps to an issue and a `/play/<slug>` route.
-- `data/` — per-game datasets.
-- `docs/` — GAMES / GOALS / REQUIREMENTS.
+- `src/rust/backend/` — axum API: `auth/` (local + OAuth2), `games/`, `db/` (PostgreSQL).
+- `src/rust/engines/` — wasm32 crates (single-threaded, canvas): `sudoku` · `logic-grid` · `crosswords`.
+- `src/frontend/launcher/` — React + TS (the only TS UI): login + game selector.
+- `src/catalog/games.yaml` — the game roadmap (source of truth); each game maps to an issue + `/play/<slug>`.
+- `src/data/` — per-game datasets.
 
 ## Rules
 
-- New games: add a catalog entry first (`catalog/games.yaml`), then the frontend app + backend service + data.
-- Package scope is `@browser-games/*`.
+- Games render via Rust → wasm to canvas; keep wasm single-threaded (GitHub Pages–compatible).
+- No TypeScript outside `frontend/launcher`.
+- New games: catalog entry first, then a wasm engine crate + data.
 - Theme: `GitHub Dark Default`.
 
 ## CI
