@@ -12,7 +12,7 @@ export default function Header() {
         </Link>
         <nav className="flex items-center gap-6 text-sm text-gray-500">
           <Link to="/" className="hover:text-gray-900 transition-colors">All Puzzles</Link>
-          <a href="https://github.com/gardusig/browser-games" className="hover:text-gray-900 transition-colors" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/skibiribab/browser-games" className="hover:text-gray-900 transition-colors" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </div>
     </header>
