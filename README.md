@@ -1,6 +1,6 @@
 # browser-games
 
-Browser games with a Rust + WASM focus — like a *banca de jornal*. The **launcher** is the home page: one game selector that drops you into any game. Rust-first, no TypeScript outside the launcher.
+Front-end only browser games with a Rust + WASM focus — like a *banca de jornal*, but ephemeral. The **launcher** is the home page: one game selector that drops you into any game. No backend, no database, no accounts — state lives in the browser and disappears when you close the tab. Rust-first, no TypeScript outside the launcher.
 
 ## Focus
 
@@ -17,13 +17,11 @@ Other game ideas live as issues, not in the active catalog. See [docs/ADD-A-GAME
 ```text
 src/
   rust/            Rust workspace
-    backend/       axum API — auth (local + oauth) · games · db (postgres)
     engines/       wasm32 crates (single-threaded, canvas) — sudoku · logic-grid · crosswords
   frontend/
-    launcher/      React + TS (the only TS UI) — login + game selector
+    launcher/      React + TS (the only TS UI) — game selector
   catalog/         games.yaml (the roadmap) + tags
-  data/            per-game datasets
-docker/            Dockerfile + docker-compose.yml (backend + postgres)
+  data/            per-game static datasets
 docs/              GAMES / GOALS / REQUIREMENTS
 ```
 
@@ -42,8 +40,11 @@ Other game ideas (n-queens, numerox, tango, chess, checkers, nonogram, and other
 ## Quick start
 
 ```bash
-docker compose -f docker/docker-compose.yml up --build
+npm --prefix src/frontend/launcher run dev
+cargo build --workspace -p sudoku -p logic-grid -p crosswords
 ```
+
+Deployed as a static site on GitHub Pages.
 
 ## Docs
 
